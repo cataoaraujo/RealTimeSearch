@@ -1,0 +1,26 @@
+<div class="container" ng-app="app" ng-controller="Analytic">
+  <div class="center question">
+    <form class="" action="">
+      <h1>What's your Question?</h1>
+      <input type="text" id="search-input" ng-model="question" ng-change="update()" ng-init="token = '<%= @token %>'" placeholder="What's your Question?">
+      <div id="delete" ng-click="question=''; update();"><span id="x">x</span></div>
+      <button id="submit" type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- <ul>
+    <li ng-repeat="article in articles">{{article.title}}</li>
+  </ul> -->
+  <div class="center">
+    <h2 style="display: inline-block;">Commonly Asked Questions</h2>
+    <span ng-click="clean();">Clean Questions</span>
+    <ul style="text-align: justify;">
+      <li ng-repeat="(key,val) in analytics">{{key}} ({{val}} searches)</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="center">
+  Rodrigo Catão Araujo 2016
+</footer>

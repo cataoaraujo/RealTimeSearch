@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+html, body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -40px;
+  box-sizing: border-box;
+}
+
+.container:after {
+  content: "";
+  display: block;
+}
+
+footer {
+  height: 25px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(175, 175, 175, 0.2);
+}
+
+.question {
+  padding-top: 150px;
+}
+
+#search-input {
+  float:left;
+	width:300px;
+	height:35px;
+	line-height:31px;
+	text-indent:10px;
+	font-family:arial, sans-serif;
+	font-size:1em;
+	color:#333;
+	background: #fff;
+	border:solid 1px #d9d9d9;
+	border-top:solid 1px #c0c0c0;
+	border-right:none;
+}
+
+/* Style the "X" text button next to the search input field */
+#delete {
+	float:left;
+	width:16px;
+	height:35px;
+	line-height:31px;
+	margin-right:15px;
+	padding:1px 10px 1px 10px;
+	font-family: "Lucida Sans", "Lucida Sans Unicode",sans-serif;
+	font-size:24px;
+	background: #fff;
+	border:solid 1px #d9d9d9;
+	border-top:solid 1px #c0c0c0;
+	border-left:none;
+}
+
+/* Set the hover state of "X" */
+#delete #x:hover {
+	color:#36c;
+}
+
+/* Syle the search button. Settings of line-height, font-size, text-indent used to hide submit value in IE */
+#submit {
+	width:70px;
+	height: 39px;
+	line-height:100%;
+	font-size: 1em;
+  text-align: center;
+	color: #fff;
+	background: #4d90fe center;
+	border: 1px solid #3079ED;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+/* Style the search button hover state */
+#submit:hover {
+	background: center #357AE8;
+	border: 1px solid #2F5BB7;
+}
