@@ -15,8 +15,7 @@
 //= require angular/angular
 //= require_tree .
 
-app = angular.module('app', []);
-app.controller('Analytic', function($scope, $http){
+angular.module('app', []).controller('Analytic', function($scope, $http){
   $scope.articles = [];
   $scope.analytics = [];
 
